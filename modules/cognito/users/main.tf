@@ -6,10 +6,7 @@ resource "aws_cognito_user_group" "default" {
 
 locals {
 
-<<<<<<< HEAD
-=======
 #TODO Jay - we should check here if phone number is provided and conditionally format?
->>>>>>> pr/168
   users = {
     for user in var.users:
       user.user_hash => {
